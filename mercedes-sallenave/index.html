@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercedes Sallenave</title>
+    <link rel="stylesheet" href="./style/reset.css"></link>
+    <link rel="stylesheet" href="./style/style.css"></link>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $( document ).ready(function() {
+            $('#answer-example-share-button').on('click', () => {
+            
+                if (navigator.share) {
+                    navigator.share({
+                        title: 'Comparti el perfil de Mercedes Sallenave',
+                        text: 'Mercedes Sallenave:',
+                        url: 'https://webbox.com.ar/mercedes-sallenave/',
+                    })
+                    .then(() => console.log('Successful share'))
+                    .catch((error) => console.log('Error sharing', error));
+                } else {
+                    console.log('Share not supported on this browser, do it the old way.');
+                }
+                });
+                });
+        </script>
+</head>
+<body>
+    <header>
+        <div class="background-header"></div>
+        <div class="avatar-container">
+            <img src="lactancia-maternajpg.jpg" alt="">
+        </div>
+        <div class="title-header">
+            <h1>Mercedes Sallenave</h1>
+            <p>Puericultora | Especialista en lactancia materna y crianza.</p>
+        </div>
+        <span class="line"></span>
+    </header>
+    <main>
+        <section>
+            <p class="description">
+                    Acompañamiento y asesoramiento a familias con sus hijos/as en un momento primordial como es el embarazo y los primeros años de vida de los bebés, buscando informar, asesorar y empoderar a las mujeres para el beneficio de la construcción del vínculo mediante la lactancia.
+            </p>
+            <ul class="experience-list">
+                <li>Charlas prenatales para embarazadas.</li>
+                <li>Consultas post natales para acompañar la lactancia, despejar dudas, mejorar la técnica, aumentar la producción, resolver alguna afección en la mama, relactar, hacer lactancia diferida.</li>
+                <li>Lactancia en bebés prematuros y situaciones especiales</li>
+                <li>Vuelta al trabajo y armado de stock de leche.</li>
+                <li>Destete respetuoso.</li>
+            </ul>
+        </section>
+        <footer>
+            <h2>Consultas <b>presenciales</b> y <b>virtuales</b></h2>
+            <div class="footer-card">
+                <h3>Contacto:</h3>
+                <a href="https://wa.me/57661852/?text=Visita+mi+perfil:+https://webbox.com.ar/mercedes-sallenave%0ADejame+tu+nombre+y+te+contactare+a+la+brevedad:%20" style="background-color:initial;">
+                    <img src="whatsapp-logo-variant.svg" alt="">
+                </a>
+                <p><a href="tel:+54 11 5766 1852">+54 11 5766 1852</a></p>
+                <p><a href="mailto:mspuericultora@gmail.com">mspuericultora@gmail.com</a></p>
+                
+            </div>
+            
+        </footer>
+        <div class="action-container">
+            <ul>
+                <li ><a href="profile-card.pdf" download><img src="download-icon.svg" alt="download-icon" /></a></li>
+                <!-- <li><a href="tel:+54114567890">Guardar Contacto</a></li> -->
+                <li ><a href="" id="answer-example-share-button"><img src="share-icon.svg" alt="share-icon" /></a></li>
+                <li>
+                    <a href="https://wa.me/57661852/?text=Visita+mi+perfil:+https://webbox.com.ar/mercedes-sallenave%0ADejame+tu+nombre+y+te+contactare+a+la+brevedad:%20" target="_blank">
+                    <img src="whatsapp-logo-variant.svg" alt="">
+                </a>
+                </li>
+            </ul>
+        </div>
+    
+
+    </main>
+</body>
+</html>
