@@ -6,8 +6,8 @@
   </defs>
   <g id="download-icon" transform="translate(-6256 -5780)" clip-path="url(#clip-path)">
     <g id="download-icon-2" data-name="download-icon" transform="translate(6255.446 5780.003)">
-      <path id="Trazado_5" data-name="Trazado 5" d="M21.164,23.04a5.154,5.154,0,0,0,0-10.309h-.029q.029-.324.029-.647a7.087,7.087,0,1,0-14.174,0c0,.006,0,.012,0,.018a5.523,5.523,0,0,0,1.1,10.937" transform="translate(0 0)" fill="rgba(0,0,0,0)" stroke="#b19dec" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"/>
-      <path id="Trazado_6" data-name="Trazado 6" d="M13.026,12V22.1m0,0,3.026-3.026M13.026,22.1,10,19.071" transform="translate(1.696 1.691)" fill="rgba(0,0,0,0)" stroke="#b19dec" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"/>
+      <path id="Trazado_5" data-name="Trazado 5" d="M21.164,23.04a5.155,5.155,0,0,0,0-10.309h-.029q.029-.324.029-.647a7.087,7.087,0,0,0-14.174,0q0,.009,0,.018a5.523,5.523,0,0,0,1.1,10.937" fill="rgba(0,0,0,0)" stroke="#8099fe" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"/>
+      <path id="Trazado_6" data-name="Trazado 6" d="M13.026,12V22.1m0,0,3.026-3.026M13.026,22.1,10,19.071" transform="translate(1.696 1.691)" fill="rgba(0,0,0,0)" stroke="#8099fe" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"/>
     </g>
   </g>
 </svg>
