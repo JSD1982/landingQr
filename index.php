@@ -1,3 +1,23 @@
+<?php 
+if(isset($_POST['submit'])){
+    $to = "pachajsc@gmail.com"; // this is your Email address
+    $from = $_POST['email']; // this is the sender's Email address
+    $first_name = $_POST['first_name'];
+    $last_name = $_POST['last_name'];
+    $subject = "Form submission";
+    $subject2 = "Copy of your form submission";
+    $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];
+    $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
+
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+    mail($to,$subject,$message,$headers);
+    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+    echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
+    // You can also use header('Location: thank_you.php'); to redirect to another page.
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -1745,10 +1765,10 @@
 
             <div class="col-lg-6">
               <form
-                action="forms/contact.php"
                 method="post"
                 class="php-email-form"
-                id="form"
+                data-aos="fade-up"
+                data-aos-delay="200"
               >
                 <div class="row gy-4">
                   <div class="col-md-6">
@@ -1798,16 +1818,13 @@
                       Your message has been sent. Thank you!
                     </div>
 
-                    <button type="submit" id="submit" name="submit">
+                    <button type="submit" name="submit" value="Submit">
                       Send Message
                     </button>
                   </div>
                 </div>
-                <div id="response"></div>
               </form>
             </div>
-
-            <!-- here you can see the response after submiting -->
             <!-- End Contact Form -->
           </div>
         </div>
@@ -1904,24 +1921,7 @@
       <div></div>
       <div></div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-      $("#submit").click(function () {
-        $.post(
-          $("#form").attr("action"),
-          $("#form :input").serializeArray(),
-          function (info) {
-            $("#response").empty();
-            $("#response").html(info);
-          }
-        );
 
-        $("#form").submit(function () {
-          alert("submit");
-          return false;
-        });
-      });
-    </script>
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
